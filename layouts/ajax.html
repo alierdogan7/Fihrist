@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
+
+</head>
+
+<form >
+<table id="myTable">
+		<tr>
+			<td><label for="sure_index">Sure adı: </label></td>
+			<td>
+			<select name="sure_index" id="sure_index">
+				<option disabled="">-- Sure Adı --</option>
+				<option value="1">Fâtiha (1)</option>
+				<option value="2">Bakara (2)</option>
+				<option value="3">Âl-i İmrân (3)</option>
+				<option value="4">Nisâ (4)</option>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td><label for="sure_no">Sure no: </label></td>
+			<td><input type="text" name="sure_no" id="sure_no" onfocusout="checkForm()"></td>
+		</tr>
+
+		<tr>
+			<td>
+				Tag ekleyin: <br>
+				<a style="font-size:.85em; font-style:italic; color:red;">(Birden fazla eklemek için Ctrl tuşuna basılı tutup tıklayın)</a>
+			</td>
+			<td>
+				<select name="tagler[]" size="5" multiple="">
+					<option value="7">Ahiret</option>
+					<option value="4">cennet-cehennem</option>
+					<option value="5">Ehli kitab</option>
+					<option value="2">iman</option>
+					<option value="6">Ölüm</option>
+					<option value="3">salih ameller</option>
+					<option value="8">Tevekkül</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+		<td>Ayet meali: </td>
+		<td>
+			<select name="meal_sec" onchange="mealSec()" id="meal_sec">
+					<option value="kendin" selected="true">Kendin yaz</option>
+					<option value="elmali">Elmalılı Hamdi Yazır</option>
+					<option value="diyanet_yeni">Diyanet İşleri (Yeni)</option>
+					<option value="diyanet_eski">Diyanet İşleri (Eski)</option>
+					<option value="diyanet_vakfi">Diyanet Vakfı</option>
+					<option value="arapca">Arapça</option>
+					<option value="suat_yildirim">Suat Yıldırım</option>
+					<option value="hayrat">Hayrat Neşriyat</option>
+					<option value="yusuf_ali_eng">Yusuf Ali (İngilizce)</option>
+					<option value="turkce_transcript">Türkçe Transkript</option>
+			</select>
+			<button id="meal_yukle" style="display:none;">Meal yükle!</button>
+			<span id="loading" style="font-weight:bold; display:none;"><img src="images/ajax-load.gif"> Yükleniyor...</span>
+		</td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td>
+			<textarea id="ayet_meal" name="ayet_meal" cols="50" rows="10"></textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td style="vertical-align:top;"><label for="ek_not">Not: </label></td>
+			<td><textarea name="ek_not" cols="50" rows="5"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td>
+			</td><td><input type="submit" name="ayetEkle" value="Ekle!" class="button" style="float:right;" id="form_submit" onclick="checkForm()"></td>
+		</tr>
+</table>
+</form>
+
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script src="scripts.js" type="text/javascript">
+</script>
+
+</html>

@@ -1,0 +1,156 @@
+
+<!-- saved from url=(0062)http://burak-erdogan.com/ayetlerim/ayetler.php?action=ayetEkle -->
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./coklu Ayet Ekleme_files/style.css" media="screen">
+<title>Ayet Ekleme</title>
+
+
+</head>
+
+<body>
+
+<div id="header-wrapper">
+<div class="center-wrapper">
+
+<div id="header">
+<div id="logo"></div><hr>
+
+<p><i>Oysa o (Kur'an), âlemler için ancak bir öğüttür. (Kalem/52)</i></p>
+</div>
+
+
+</div>
+</div>
+
+<div id="main-wrapper">
+<div class="center-wrapper">
+<div id="main">
+
+<div id="left-bar">
+
+<div id="box">
+<h3>Menü</h3>
+<ul id="special-list">
+<li><a href="http://burak-erdogan.com/ayetlerim/index.php?action=anaSayfa" class="link">Ana Sayfa</a></li>
+<li><a href="http://burak-erdogan.com/ayetlerim/ayetler.php?action=ayetListele" class="link">Ayetleri Görüntüle</a></li>
+<li><a href="./coklu Ayet Ekleme_files/coklu Ayet Ekleme.htm" class="link">Ayet Ekle</a></li>
+<li><a href="http://burak-erdogan.com/ayetlerim/tagler.php?action=tagListele" class="link">Tag'leri Görüntüle</a></li>
+<li><a href="http://burak-erdogan.com/ayetlerim/tagler.php?action=tagEkle" class="link">Tag Ekle</a></li>
+</ul>
+</div>
+
+
+</div> 
+    <div id="content">
+	<div id="title">Ayet Ekleme</div>
+	<button onclick="myFunction()">5 tane daha ekle</button>
+
+	<script>
+	function myFunction() {
+		var table = document.getElementById("myTable");
+		var row1 = table.insertRow(0);
+		var cell1 = row1.insertCell(0);
+		
+		var row2 = table.insertRow(1);
+		var cell2 = row2.insertCell(0);
+		
+		var row3 = table.insertRow(2);
+		var cell3 = row3.insertCell(0);
+		
+		var row4 = table.insertRow(3);
+		var cell4 = row4.insertCell(0);
+		
+		var row5 = table.insertRow(4);
+		var cell5 = row5.insertCell(0);
+		
+		var tableContent = "<hr><table><tr><td><label for='sure_adi'>Sure adı: </label></td><td><input type='text' name='sure_adi[]' id='sure_adi'></td></tr><tr><td><label for='sure_no'>Sure no: </label></td><td><input type='text' name='sure_no[]' id='sure_no'></td></tr><tr><td>Tag ekleyin: <br><a style='font-size:.85em; font-style:italic; color:red;'>(Birden fazla eklemek için Ctrl tuşuna basılı tutup tıklayın)</a></td><td><select name='tagler[]' size='5' multiple=''><option value='8'>Müslüman Dünyası</option></select></td></tr><tr><td style='vertical-align:top;'><label for='ayet_meal'>Ayet meali: </label></td><td><textarea name='ayet_meal' cols='50' rows='10'></textarea></td></tr><tr><td style='vertical-align:top;'><label for='ek_not'>Not: </label></td><td><textarea name='ek_not' cols='50' rows='5'></textarea></td></tr></table>";
+			
+		cell1.innerHTML = tableContent;
+		cell2.innerHTML = tableContent;
+		cell3.innerHTML = tableContent;
+		cell4.innerHTML = tableContent;
+		cell5.innerHTML = tableContent;
+		
+	}
+	</script>
+	  
+	<form action="./coklu Ayet Ekleme_files/coklu Ayet Ekleme.htm" method="POST">
+		  
+	<table id="myTable">
+	
+	<tr><td>
+		<table>
+			<tr>
+				<td><label for="sure_adi">Sure adı: </label></td>
+				<td><input type="text" name="sure_adi" id="sure_adi"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="sure_no">Sure no: </label></td>
+				<td><input type="text" name="sure_no" id="sure_no"></td>
+			</tr>
+			
+			<tr>
+				<td>
+					Tag ekleyin: <br>
+					<a style="font-size:.85em; font-style:italic; color:red;">(Birden fazla eklemek için Ctrl tuşuna basılı tutup tıklayın)</a>
+				</td>
+				<td>
+					<select name="tagler[]" size="5" multiple="">
+						<option value="8">Müslüman Dünyası</option>
+					</select>
+				</td>
+			</tr>
+		
+			<tr>
+				<td style="vertical-align:top;"><label for="ayet_meal">Ayet meali: </label></td>
+				<td><textarea name="ayet_meal" cols="50" rows="10"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td style="vertical-align:top;"><label for="ek_not">Not: </label></td>
+				<td><textarea name="ek_not" cols="50" rows="5"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td>
+				</td><td><input type="submit" name="ayetEkle" value="Ekle!" class="button" style="float:right;"></td>
+			</tr>
+		</table>
+	</td></tr>
+	
+	
+	</table>
+	</form>
+	  
+	</div>
+ 
+</div>
+
+<div id="clearer"></div>
+
+</div>
+</div>
+
+
+
+
+<div id="footer-wrapper">
+<div class="center-wrapper">
+<div id="footer">
+Footer..
+Footer..
+Footer..<br>
+Footer..<br>
+Footer..
+</div>
+</div>
+</div>
+
+
+
+</body></html>

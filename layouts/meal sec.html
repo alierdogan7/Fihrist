@@ -1,0 +1,117 @@
+<html>
+<head>
+<script>
+
+	function mealSec() {
+		var meal_select = document.getElementById("meal-select");
+		var myTable = document.getElementById("myTable");
+		
+		var textareaHtml = '<textarea name="ayet_meal_text" cols="50" rows="10"></textarea>';
+		
+		if(meal_select.value == 'kendin')
+		{
+			var newRow = myTable.insertRow(4);
+			newRow.insertCell(0);
+			var newTd = newRow.insertCell(1);
+			newTd.innerHTML = textareaHtml;
+		}
+		else
+		{
+			myTable.deleteRow(4);
+		}		
+	}
+	
+	function checkSureNo(){
+		var regex1 = /^([1-9]\d{0,2})-([1-9]\d{0,2})$/; //regular expression defining a 5 digit number
+		var regex2 = /^([1-9]\d{0,2})$/;
+		var sureNo = document.getElementById("sure_no");
+		
+		if (sureNo.value.search(regex1)==-1 && sureNo.value.search(regex2)==-1) //if match failed
+		{
+			document.getElementById("form_submit").disabled = true;
+			alert("Lütfen xxx-xxx veya xxx şeklinde giriş yapınız. \n(Örnek: 12-155 veya 129)");
+		}
+		else
+		{
+			document.getElementById("form_submit").disabled = false;
+		}
+	}
+	
+</script>
+</head>
+
+
+<table id="myTable">
+		<tr>
+			<td><label for="sure_adi">Sure adı: </label></td>
+			<td>
+			<select name="sure_adi">
+				<option disabled="">-- Sure Adı --</option>
+				<option value="Fâtiha">Fâtiha (1)</option>
+				<option value="Bakara">Bakara (2)</option>
+				<option value="Âl-i İmrân">Âl-i İmrân (3)</option>
+				<option value="Nisâ">Nisâ (4)</option>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td><label for="sure_no">Sure no: </label></td>
+			<td><input type="text" name="sure_no" id="sure_no" onfocusout="checkSureNo()"></td>
+		</tr>
+
+		<tr>
+			<td>
+				Tag ekleyin: <br>
+				<a style="font-size:.85em; font-style:italic; color:red;">(Birden fazla eklemek için Ctrl tuşuna basılı tutup tıklayın)</a>
+			</td>
+			<td>
+				<select name="tagler[]" size="5" multiple="">
+					<option value="7">Ahiret</option>
+					<option value="4">cennet-cehennem</option>
+					<option value="5">Ehli kitab</option>
+					<option value="2">iman</option>
+					<option value="6">Ölüm</option>
+					<option value="3">salih ameller</option>
+					<option value="8">Tevekkül</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+		<td>Ayet meali: </td>
+		<td>
+			<select name="ayet_meal" onchange="mealSec()" id="meal-select">
+					<option value="kendin" selected="true">Kendin yaz</option>
+					<option value="elmali">Elmalılı Hamdi Yazır</option>
+					<option value="diyanet_yeni">Diyanet İşleri (Yeni)</option>
+					<option value="diyanet_eski">Diyanet İşleri (Eski)</option>
+					<option value="diyanet_vakfi">Diyanet Vakfı</option>
+					<option value="arapca">Arapça</option>
+					<option value="suat_yildirim">Suat Yıldırım</option>
+					<option value="hayrat">Hayrat Neşriyat</option>
+					<option value="yusuf_ali_eng">Yusuf Ali (İngilizce)</option>
+					<option value="turkce_transcript">Türkçe Transkript</option>
+			</select>
+		</td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td>
+			<textarea name="ayet_meal_text" cols="50" rows="10"></textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td style="vertical-align:top;"><label for="ek_not">Not: </label></td>
+			<td><textarea name="ek_not" cols="50" rows="5"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td>
+			</td><td><input type="submit" name="ayetEkle" value="Ekle!" class="button" style="float:right;" id="form_submit"></td>
+		</tr>
+</table>
+
+</html>

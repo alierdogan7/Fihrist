@@ -1,0 +1,132 @@
+[08-Sep-2014 00:18:27 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[08-Sep-2014 01:23:21 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[09-Sep-2014 06:34:01 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 86
+[09-Sep-2014 06:48:11 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[09-Sep-2014 06:48:11 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[09-Sep-2014 06:52:21 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[09-Sep-2014 06:52:21 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[09-Sep-2014 06:53:22 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[09-Sep-2014 06:53:22 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[09-Sep-2014 10:18:12 Asia/Istanbul] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'localhost'@'localhost' (using password: NO) in /home/burakerd/public_html/ayetlerim/functions.php on line 11
+[09-Sep-2014 10:18:13 Asia/Istanbul] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/burakerd/public_html/ayetlerim/functions.php on line 12
+[09-Sep-2014 10:25:26 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 86
+[09-Sep-2014 10:25:26 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 86
+[09-Sep-2014 10:35:57 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[09-Sep-2014 10:35:57 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[09-Sep-2014 10:51:45 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 05:58:46 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 05:58:47 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 05:59:26 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[12-Sep-2014 06:00:02 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[12-Sep-2014 06:00:02 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 06:06:52 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 06:17:43 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[12-Sep-2014 06:17:43 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 10:39:02 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 159
+[12-Sep-2014 12:38:11 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 12:38:40 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 12:39:03 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[12-Sep-2014 12:39:03 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 12:39:13 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 12:39:49 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 12:40:19 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 12:40:44 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 12:41:21 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Sep-2014 16:23:07 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[12-Sep-2014 16:23:07 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[17-Sep-2014 12:12:15 Europe/Istanbul] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Couldn't resolve host name in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:15 Europe/Istanbul] PHP Warning:  file_get_contents(http://www.kuranmeali.com/ayetkarsilastirma.asp?sure=5&amp;ayet=72) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:20 Europe/Istanbul] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Couldn't resolve host name in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:20 Europe/Istanbul] PHP Warning:  file_get_contents(http://www.kuranmeali.com/ayetkarsilastirma.asp?sure=5&amp;ayet=72) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:22 Europe/Istanbul] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Couldn't resolve host name in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:22 Europe/Istanbul] PHP Warning:  file_get_contents(http://www.kuranmeali.com/ayetkarsilastirma.asp?sure=5&amp;ayet=72) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:23 Europe/Istanbul] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Couldn't resolve host name in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:23 Europe/Istanbul] PHP Warning:  file_get_contents(http://www.kuranmeali.com/ayetkarsilastirma.asp?sure=5&amp;ayet=72) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:23 Europe/Istanbul] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Couldn't resolve host name in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:12:23 Europe/Istanbul] PHP Warning:  file_get_contents(http://www.kuranmeali.com/ayetkarsilastirma.asp?sure=5&amp;ayet=72) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:39:55 Europe/Istanbul] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Couldn't resolve host name in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:39:55 Europe/Istanbul] PHP Warning:  file_get_contents(http://www.kuranmeali.com/ayetkarsilastirma.asp?sure=3&amp;ayet=112) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:39:59 Europe/Istanbul] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Couldn't resolve host name in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:39:59 Europe/Istanbul] PHP Warning:  file_get_contents(http://www.kuranmeali.com/ayetkarsilastirma.asp?sure=3&amp;ayet=112) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/burakerd/public_html/ayetlerim/classes/simple_html_dom.php on line 82
+[17-Sep-2014 12:54:16 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 86
+[20-Sep-2014 12:36:16 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 113
+[20-Sep-2014 12:36:16 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 120
+[21-Sep-2014 19:40:44 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[22-Sep-2014 07:23:12 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[22-Sep-2014 07:23:13 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[28-Sep-2014 17:51:22 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[28-Sep-2014 17:51:22 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[28-Sep-2014 17:55:02 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[28-Sep-2014 17:55:02 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[29-Sep-2014 23:16:17 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[29-Sep-2014 23:16:17 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[02-Oct-2014 10:19:53 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 126
+[02-Oct-2014 10:19:53 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[04-Oct-2014 06:14:26 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 86
+[06-Oct-2014 06:09:11 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[06-Oct-2014 06:15:57 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[06-Oct-2014 07:15:40 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 131
+[06-Oct-2014 07:15:40 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 138
+[06-Oct-2014 07:15:59 Asia/Istanbul] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 129
+[06-Oct-2014 07:15:59 Asia/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 134
+[06-Oct-2014 07:15:59 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 91
+[06-Oct-2014 07:41:38 Asia/Istanbul] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 129
+[06-Oct-2014 07:41:38 Asia/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 134
+[06-Oct-2014 07:41:38 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 91
+[06-Oct-2014 07:43:10 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:43:15 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:43:19 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:43:28 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:43:47 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:44:51 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:46:54 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:47:32 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:50:41 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 07:55:03 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 08:14:36 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 285
+[06-Oct-2014 08:14:37 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 285
+[06-Oct-2014 08:21:50 Asia/Istanbul] PHP Parse error:  syntax error, unexpected '{' in /home/burakerd/public_html/ayetlerim/classes/Ayet.php on line 192
+[06-Oct-2014 08:48:11 Asia/Istanbul] PHP Fatal error:  Call to undefined method Ayet::checkAyetExists() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 79
+[06-Oct-2014 08:50:06 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 93
+[07-Oct-2014 12:07:19 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[07-Oct-2014 12:07:19 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[07-Oct-2014 12:07:49 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[07-Oct-2014 12:07:49 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[09-Oct-2014 15:10:17 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[13-Oct-2014 06:52:34 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 113
+[13-Oct-2014 06:52:35 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 120
+[21-Oct-2014 13:23:49 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[23-Oct-2014 07:31:29 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[23-Oct-2014 07:31:29 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[23-Oct-2014 07:33:42 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[23-Oct-2014 07:33:42 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[26-Oct-2014 13:06:03 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[26-Oct-2014 13:06:03 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[27-Oct-2014 12:55:13 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 159
+[27-Oct-2014 13:11:23 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 159
+[27-Oct-2014 13:38:57 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[27-Oct-2014 13:38:57 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[13-Nov-2014 07:49:45 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[13-Nov-2014 07:49:45 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[20-Nov-2014 15:00:26 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[20-Nov-2014 15:02:22 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[20-Nov-2014 15:02:45 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[20-Nov-2014 15:03:12 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[21-Nov-2014 21:58:12 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[28-Nov-2014 18:28:22 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/tagler.php on line 159
+[28-Nov-2014 18:33:32 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[28-Nov-2014 18:33:40 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[28-Nov-2014 18:33:48 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[28-Nov-2014 18:33:56 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[29-Nov-2014 13:04:30 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[29-Nov-2014 13:04:30 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[13-Dec-2014 17:24:22 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[15-Dec-2014 17:57:57 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[15-Dec-2014 17:58:10 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[15-Dec-2014 17:58:23 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[24-Dec-2014 08:11:24 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[24-Dec-2014 08:11:24 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[24-Dec-2014 08:14:00 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 93
+[24-Dec-2014 08:14:37 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140
+[12-Jan-2015 12:08:21 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 133
+[12-Jan-2015 12:08:21 Asia/Istanbul] PHP Warning:  Invalid argument supplied for foreach() in /home/burakerd/public_html/ayetlerim/ayetler.php on line 140

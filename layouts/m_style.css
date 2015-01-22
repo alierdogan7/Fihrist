@@ -1,0 +1,141 @@
+body
+{
+	font-family:'Helvetica';
+	font-size:1.5em;
+}
+
+#header-wrapper
+{
+	background-color: #E7E7E7;
+	
+}
+
+#header
+{
+	background-color: #C2C2C2;
+	padding: 10px;
+	/* -webkit-box-shadow: 0px 0px 5px 9px #c2c2c2;
+	-moz-box-shadow:    0px 0px 5px 9px #c2c2c2;
+	box-shadow:         0px 0px 5px 9px #c2c2c2; */
+}
+
+#main-wrapper
+{
+	background: #F6F6F6 url('http://erdoganerdogan.av.tr/img/content-wrapper.jpg') repeat-y center top;
+	background-size: 100% 150px;
+}
+
+#main
+{
+	padding: 10px;
+	float: left;
+}
+
+#left-bar
+{
+	width: 15%;
+	float: left;
+	padding: 3%;
+	border-right: 1px solid #E5E5E5;
+}
+
+#title
+{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #E5E5E5;
+	color: #003d5d;
+	font-size: 1.5em;
+}
+
+#navbar
+{
+	border: 2px red solid;
+	background: #f6f6f6;
+	padding:0;
+	overflow:hidden;
+}
+
+#navbar ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+#navbar ul li
+{
+	float:left;
+	color: blue;
+	border-right: 2px red solid;
+}
+
+#navbar ul li:hover
+{
+	background:yellow;
+}
+
+#navbar li a
+{
+	display:block;
+	padding:10px;
+	margin:10px;
+}
+
+#navbar li a:link
+{
+	text-decoration:none;
+	color:blue;
+}
+
+#special-list
+{
+	margin: 0;
+	padding: 0;
+}
+
+#special-list li
+{
+	padding: 0 0 0 20px;
+	list-style-type:none;
+	background: url('http://erdoganerdogan.av.tr/img/li.gif') no-repeat left center;
+	margin-bottom: 5px;
+}
+
+#content
+{
+	width: 70%;
+	padding: 3%;
+	float: left;
+}
+
+#box
+{
+	margin-bottom: 20px;
+	padding: 0 20px 20px 20px;
+	border-bottom: 1px #E5E5E5 solid;
+}
+
+.center-wrapper
+{
+	width: auto;
+	margin: 0 auto;
+}
+
+#footer-wrapper
+{
+	background: #a9a9a9 url('http://erdoganerdogan.av.tr/img/footer-wrapper.gif') no-repeat center bottom;
+	background-size: 100% 150px;
+}
+
+
+
+#footer
+{
+	padding: 3%;
+}
+
+#clearer
+{
+	clear:both;
+}

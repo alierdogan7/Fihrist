@@ -1,0 +1,46 @@
+﻿GÜNCEL SORUNLAR
+
+++ayetGosterde facebook vs. paylaş butonu
+
+tüm mealler düzgün çalışıyor yalnız arapça bozuk
+
+++scripts.js ==> sureIndex null döndürüyor .value kontrol edilmiyor
+
+++Sıfırla butonu ayet meali resetleyemiyor
+
+---------------------
+
+index.php // tüm yönlendirmelerin ve ayarlamalarin yapildigi yer
+anasayfa.php //son eklenen ayetlerin ve tag'lerin listesinin bulundugu sayfa(ayetListele.php ve tagListele.php'yi include eder)
+
+-------------
+
+ayetler.php // default olarak ayetListele.php include eder ve ?action=ayetGoster&ayetId=5 veya ?action=ayetDuzenle&ayetId=5 veya action=ayetSil&ayetId=5 veya action=ayetEkle komutlarini barindiracak 
+ayetEkle.php // ayet bilglileri girilecek formlar, birden fazla tag eklenebilen selectboxlar
+ayetGoster.php // ayet bilgilerinin bulundugu ekran
+ayetDuzenle.php //ayet bilgilerinin formlar içinde bulundugu ekran, tag'leri kaldirilabilecek ve yeni tag eklenebilecek(selectbox ile)
+ayetListele.php // bulunan tüm ayetleri pagination ile birlikte, tagleriyle birlikte tablo halinde gösteren ekran
+
+-----------
+
+?action=tagGoster // tag ismi ve ona bagli tüm ayetleri listeleyecek ekran(ayetListele.php 'yi include eder), 
+tagListele.php //bulunan tagleri ve bagli bulundugu ayet sayisini yazdirir
+tagler.php //tagListele.php'yi include eder yeni tag ekleme kismini içerir
+tagDuzenle.php //tag sil butonunu içerir, tag ismini düzeltmeye imkan tanir, baglı olan ayetler'den tag'i silme butonunu içerir
+
+--------------
+
+Ayet.php // ayet_id, tarih, sure_no, sure_adi, ayet_meal, ek_not	consturctor, setValues(array $data), static getById(id), 
+static getList($numRows=1000000, $order="tarih DESC"), update(), insert(), delete()
+
+Tag.php // tag_id, tarih,  tag_adi	consturctor, setValues(array $data), static getById(id), 
+static getList($numRows=1000000, $order="tarih DESC"), update(), insert(), delete()
+
+AyetTag.php // ayet_id, tag_id		constructor, setValues(ayetId, tagId), static getAyetListByTag(tagId), static getTagListByAyet(ayetId), insert(), update(), delete()
+
+
+CREATE TABLE ayet ( ayet_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, tarih INT UNSIGNED NOT NULL, sure_no VARCHAR(10) NOT NULL, sure_adi VARCHAR(20) NOT NULL, ayet_meal VARCHAR(1000) NOT NULL, ek_not VARCHAR(1000), INDEX(sure_adi(10)), FULLTEXT(ayet_meal) )
+
+CREATE TABLE tag ( tag_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, tarih INT UNSIGNED NOT NULL, tag_adi VARCHAR(100) )
+
+CREATE TABLE ayet_tag ( ayet_id INT UNSIGNED NOT NULL, tag_id INT UNSIGNED NOT NULL )

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<style>
+.table
+{
+	width:100%;
+	border-spacing: 0;
+	border-collapse: collapse; /* double border'mış gibi olan görüntüyü engeller */
+	color: #333;
+}
+
+.table tr
+{
+	border-width: 1px 0 1px 0;
+	border-style: solid;
+	border-color: #ddd;
+	width:auto;
+}
+
+.table tr#tek
+{
+	background-color:#f8f8f8;
+}
+
+.table th 
+{
+	padding:8px;
+	font-weight:bold;
+	width:25%;
+	border-bottom: 1px solid #ddd;
+}
+
+.table td
+{
+	padding:20px;
+	text-align:center;
+	width:25%;
+}
+</style>
+
+
+<table class="table">
+
+<tr style="border-top:0; border-bottom:3px solid #ddd">
+<th colspan="3">
+	Tag Adı:
+</th>
+<th>
+Ayet Sayısı:
+</th>
+</tr>
+
+<tr id="tek">
+<td colspan="3">
+İman
+</td>
+<td>
+4
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+Cennet
+</td>
+<td>
+5
+</td>
+</tr>
+
+<tr id="tek">
+<td colspan="3">
+cehennem
+</td>
+<td>
+12
+</td>
+</tr>
+
+<tr>
+<td colspan="3"> 
+Salih ameller
+</td>
+<td>
+8
+</td>
+</tr>
+
+<tr style="visibility:hidden">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+</table>
