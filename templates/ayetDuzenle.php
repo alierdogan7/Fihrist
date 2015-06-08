@@ -97,13 +97,7 @@
 					<option value="kendin" selected="true">Kendin yaz</option>
 					<option value="elmali">Elmalılı Hamdi Yazır</option>
 					<option value="diyanet_yeni">Diyanet İşleri (Yeni)</option>
-					<option value="diyanet_eski">Diyanet İşleri (Eski)</option>
 					<option value="diyanet_vakfi">Diyanet Vakfı</option>
-					<option value="arapca">Arapça</option>
-					<option value="suat_yildirim">Suat Yıldırım</option>
-					<option value="hayrat">Hayrat Neşriyat</option>
-					<option value="yusuf_ali_eng">Yusuf Ali (İngilizce)</option>
-					<option value="turkce_transcript">Türkçe Transkript</option>
 			</select>
 			<button id="meal_yukle" style="display:none;">Meal yükle!</button>
 			<span id="loading" style="font-weight:bold; display:none;"><img src="images/ajax-load.gif"> Yükleniyor...</span>
