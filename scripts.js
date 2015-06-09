@@ -1,35 +1,37 @@
 $(document).ready(function(){
 		
-		//meal yükle ajax
-		$("#meal_yukle").click(function (e) {
+	//meal yükle ajax
+	$("#meal_yukle").click(function (e) {
 
-			$("#loading").css( "display", "block" );
-			$("#ayet_meal").val("");
-			
-			$.ajax({
-				type: "GET",
-				data: $('form').serialize(),
-				url: "mealYukle.php",
-				success: function(msg){
-					$("#ayet_meal").val(msg);
-					$("#loading").css( "display", "none" );
-				}
-			});
-			e.preventDefault();
-			
-		});
+		$("#loading").css( "display", "block" );
+		$("#ayet_meal").val("");
 		
-		//sıfırla butonu
-		$("#sifirla_button").click(function (e) {
-			$("#ayet_meal").val("");
+		$.ajax({
+			type: "GET",
+			data: $('form').serialize(),
+			url: "mealYukle.php",
+			success: function(msg){
+				$("#ayet_meal").val(msg);
+				$("#loading").css( "display", "none" );
+			}
 		});
-
-		//açılır kapanır menü
-		$("#box h3").click( function()
-		{
-			$(this).siblings("ul").slideToggle();
-		});
+		e.preventDefault();
+		
 	});
+	
+	//sıfırla butonu
+	$("#sifirla_button").click(function (e) {
+		$("#ayet_meal").val("");
+	});
+
+	//açılır kapanır menü
+	$("#box h3").click( function()
+	{
+		$(this).siblings("ul").slideToggle();
+	});
+});
+
+
 
 
 function mealSec() {

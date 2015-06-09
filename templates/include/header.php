@@ -53,8 +53,10 @@
 if(isset($giris_yapmis) && $giris_yapmis)
 {
 ?>
+<hr/>
 <li><a href="ayetler.php?action=ayetEkle" class="link">Ayet Ekle</a></li>
 <li><a href="tagler.php?action=tagEkle" class="link">Tag Ekle</a></li>
+<li><a href="index.php?action=yedekle" class="link" onclick="return confirm('Yedekle işlemi için emin misiniz?')">Veritabanı Yedekle</a></li>
 <li><a href="index.php?action=cikis" class="link">Çıkış</a></li>
 <?php
 }

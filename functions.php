@@ -2,9 +2,9 @@
 
 date_default_timezone_set( "Asia/Istanbul" );
 define("DB_HOSTNAME", 'localhost');
-define("DB_DATABASE", 'db_name');
-define("DB_USERNAME", 'db_username');
-define("DB_PASSWORD", 'db_password');
+define("DB_DATABASE", 'aliburak');
+define("DB_USERNAME", 'root');
+define("DB_PASSWORD", '');
 
 function baglan()
 {

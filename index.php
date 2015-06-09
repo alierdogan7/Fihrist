@@ -11,6 +11,10 @@ switch($action)
 	case 'anaSayfa':
 		anaSayfa();
 		break;
+	case 'yedekle':
+		if($giris_yapmis) yedekle();
+		else rapor(FALSE, "Yönetici girişi yapılmamış!", $header_url = "index.php?action=giris");
+		break;
 	case 'giris':
 		if(!$giris_yapmis) giris();
 		else rapor(FALSE, "Zaten giriş yapılmış!");
@@ -44,6 +48,11 @@ function anaSayfa()
 	
 	$veriler['baslik'] = "Ayetlerim - Ana Sayfa";
 	require("templates/anasayfa.php");
+}
+
+function yedekle()
+{
+	include("backupDb.php");
 }
 
 function giris()

@@ -1,12 +1,9 @@
 ﻿GÜNCEL SORUNLAR
 
-++ayetGosterde facebook vs. paylaş butonu
+arapça metin ve ses ayetGöstere eklenecek
 
-tüm mealler düzgün çalışıyor yalnız arapça bozuk
-
-++scripts.js ==> sureIndex null döndürüyor .value kontrol edilmiyor
-
-++Sıfırla butonu ayet meali resetleyemiyor
+sesler için link http://webdosya.diyanet.gov.tr/kuran/Sound/ar_davutkaya/2_2.mp3
+arapça için link view-source:http://kuran.diyanet.gov.tr/KuranHandler.ashx?l=ar&a=3:62
 
 ---------------------
 
