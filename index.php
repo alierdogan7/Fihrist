@@ -11,10 +11,10 @@ switch($action)
 	case 'anaSayfa':
 		anaSayfa();
 		break;
-	case 'yedekle':
+	/*case 'yedekle':
 		if($giris_yapmis) yedekle();
 		else rapor(FALSE, "Yönetici girişi yapılmamış!", $header_url = "index.php?action=giris");
-		break;
+		break;*/
 	case 'giris':
 		if(!$giris_yapmis) giris();
 		else rapor(FALSE, "Zaten giriş yapılmış!");
