@@ -82,7 +82,7 @@ function sureIndexBul($sure_adi)
 	foreach($sureler as $index => $sure)
 	{
 		if($sure == $sure_adi)
-			return $index;
+			return $index+1;
 	}
 	return -1;
 }
@@ -134,6 +134,68 @@ function tarih_ver($time)
 	$tarih = date("d", $time) . " " . $ay . date(" Y", $time) . " Saat " . date("H:i", $time);
 	
 	return $tarih;
+}
+
+
+function getArabicText($sure_index, $sure_no)
+{
+	if($sure_index == -1)
+		return "Arapça metin bulunamadı0";
+
+	$regex1 = '/^([1-9]\d{0,2})-([1-9]\d{0,2})$/'; // 5-13 gibi girdiler için
+	$regex2 = '/^([1-9]\d{0,2})$/'; // 28 gibi girdiler için
+	
+	if(preg_match($regex1, $sure_no) ) //birden çok ayet varsa
+	{
+		preg_match_all($regex1, $sure_no, $results);
+
+		$ayet_no1 = $results[1][0];
+		$ayet_no2 = $results[2][0];
+		$text = "";
+		
+		//eğer 5-3 gibi birşey girilmemişse
+		if($ayet_no1 <= $ayet_no2)
+		{
+			for($i=$ayet_no1; $i <= $ayet_no2; $i++)
+			{
+				$html = file_get_html("http://kuran.diyanet.gov.tr/KuranHandler.ashx?l=ar&a=" . $sure_index . ":" . $i);
+				
+				if (method_exists($html,"find")) {
+					 // then check if the html element exists to avoid trying to parse non-html
+					 if ($html->find('span[id=ar_' . $sure_index . '-' . $i . ']')) {
+						  // and only then start searching (and manipulating) the dom
+						$str = $html->find('span[id=ar_' . $sure_index . '-' . $i . ']', 0)->plaintext;
+						$text .= $str . " ";
+					 }
+					 else return "Arapça metin bulunamadı1 : $sure_index & $i"; //eğer sayfa bulunamazsa tüm meali komple yoket
+				}
+				else return "Arapça metin bulunamadı2"; //eğer sayfa bulunamazsa tüm meali komple yoket
+			}
+			
+			return substr($text, 0, -4); //loop'tan başarıyla çıkarsa meali return et
+		}
+		else return "İlk ayet numarası ikincisinden büyük olamaz.";
+	}
+	elseif(preg_match($regex2, $sure_no) ) //tek ayet varsa
+	{
+		$html = file_get_html("http://kuran.diyanet.gov.tr/KuranHandler.ashx?l=ar&a=" . $sure_index . ":" . $sure_no);
+				
+		if (method_exists($html,"find")) {
+			 // then check if the html element exists to avoid trying to parse non-html
+			 if ($html->find('span[id=ar_' . $sure_index . '-' . $sure_no . ']')) {
+				  // and only then start searching (and manipulating) the dom
+				$text = $html->find('span[id=ar_' . $sure_index . '-' . $sure_no . ']', 0)->plaintext;
+				$text = trim($text, " \t\r\n");
+				return $text;
+			 }
+			 else return "Arapça metin bulunamadı3";
+		}
+		else return "Arapça metin bulunamadı4";
+	}
+	else
+	{
+		return "Arapça metin bulunamadı(regex)";
+	}
 }
 
 ?>

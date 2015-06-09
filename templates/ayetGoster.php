@@ -1,22 +1,41 @@
 <?php include "templates/include/header.php"; 
 require("classes/simple_html_dom.php");?>
- 
+
     <div id="content">
 		  
 		<div id="ayet">
 			<p id="baslik"><?php echo $veriler['ayet']->sure_adi . " " . $veriler['ayet']->sure_no ?>
 
-			<!--- PAYLAŞIM -->
-<!-- Place this tag where you want the share button to render. -->
-<div class="g-plus" data-action="share" data-annotation="bubble" data-height="24"></div>
-
-<a href="javascript:void(0)" title="Facebook" onclick="window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href)+'&amp;t='+<?php "encodeURIComponent(document.title))"; echo "'". $veriler['baslik'] . "'";?>);return false;"><img src="http://www.gundogmus.gov.tr/ortak_icerik/gundogmus/Facebook%20payla%C5%9F/1k.png" alt="Facebook'a Paylaş"></a>
-
-			<!--- PAYLAŞIM -->
+			<table style="width: 100%;">
+  			<tr>
+   			<td style="width: 33%;"><i><?php echo tarih_ver($veriler['ayet']->tarih) ?></i></td>
+ 			
+ 			<?php if (sureIndexBul($veriler['ayet']->sure_adi) != -1) {
+ 			?>
+   			<td style="width: 33%;">
+   			 	<center>Dinle: <br>
+   			 	<audio controls="" style="width: 45px;">
+				 <?php echo '<source src="http://webdosya.diyanet.gov.tr/kuran/Sound/ar_ishakdemir/' . 
+				 			sureIndexBul($veriler['ayet']->sure_adi) . "_" . $veriler['ayet']->sure_no . '.mp3" type="audio/mpeg">';
+				 ?>
+				  Browser'ınız bunu desteklemiyor.
+				  </audio></center>
+			</td>
+			<?php
+			}
+			?>
 			
-			</p>
+			<td style="width: 33%;">
+			<!--- PAYLAŞIM -->
+			<div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 94px; height: 24px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 94px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1433877625386" name="I0_1433877625386" src="https://apis.google.com/u/0/se/0/_/+1/sharebutton?plusShare=true&amp;usegapi=1&amp;action=share&amp;annotation=bubble&amp;height=24&amp;hl=tr&amp;origin=http%3A%2F%2Flocalhost&amp;url=http%3A%2F%2Flocalhost%2FAyetlerim%2Fayetler.php%3Faction%3DayetGoster%26ayetId%3D117&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.utjGQShWxzw.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCP2OuliJPRPjWZHaVKTj26RhlNGzA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1433877625386&amp;parent=http%3A%2F%2Flocalhost&amp;pfname=&amp;rpctoken=16288840" data-gapiattached="true" title="+Paylaş"></iframe></div>
+			<a href="javascript:void(0)" title="Facebook" onclick="window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href)+'&amp;t='+'Ayetlerim - Alâ 14-17');return false;"><img src="http://www.gundogmus.gov.tr/ortak_icerik/gundogmus/Facebook%20payla%C5%9F/1k.png" alt="Facebook'a Paylaş"></a>
+			<!--- PAYLAŞIM -->
+			</td>
 			
-			<p><i><?php echo tarih_ver($veriler['ayet']->tarih) ?></i></p>
+ 			</tr>
+ 			</table>
+ 			</p>
+
 
 			<p id="arapca"><?php echo getArabicText( sureIndexBul($veriler['ayet']->sure_adi), $veriler['ayet']->sure_no ); ?></p>
 
@@ -53,69 +72,3 @@ require("classes/simple_html_dom.php");?>
 
 
 <?php include "templates/include/footer.php" ?>
-
-
-<?php
-
-function getArabicText($sure_index, $sure_no)
-{
-	if($sure_index == -1)
-		return "Arapça metin bulunamadı0";
-
-	$regex1 = '/^([1-9]\d{0,2})-([1-9]\d{0,2})$/'; // 5-13 gibi girdiler için
-	$regex2 = '/^([1-9]\d{0,2})$/'; // 28 gibi girdiler için
-	
-	if(preg_match($regex1, $sure_no) ) //birden çok ayet varsa
-	{
-		preg_match_all($regex1, $sure_no, $results);
-
-		$ayet_no1 = $results[1][0];
-		$ayet_no2 = $results[2][0];
-		$text = "";
-		
-		//eğer 5-3 gibi birşey girilmemişse
-		if($ayet_no1 <= $ayet_no2)
-		{
-			for($i=$ayet_no1; $i <= $ayet_no2; $i++)
-			{
-				$html = file_get_html("http://kuran.diyanet.gov.tr/KuranHandler.ashx?l=ar&a=" . $sure_index . ":" . $i);
-				
-				if (method_exists($html,"find")) {
-					 // then check if the html element exists to avoid trying to parse non-html
-					 if ($html->find('span[id=ar_' . $sure_index . '-' . $i . ']')) {
-						  // and only then start searching (and manipulating) the dom
-						$str = $html->find('span[id=ar_' . $sure_index . '-' . $i . ']', 0)->plaintext;
-						$str = trim($str, " \t\r\n");
-					 }
-					 else return "Arapça metin bulunamadı1"; //eğer sayfa bulunamazsa tüm meali komple yoket
-				}
-				else return "Arapça metin bulunamadı2"; //eğer sayfa bulunamazsa tüm meali komple yoket
-			}
-			
-			return substr($text, 0, -4); //loop'tan başarıyla çıkarsa meali return et
-		}
-		else return "İlk ayet numarası ikincisinden büyük olamaz.";
-	}
-	elseif(preg_match($regex2, $sure_no) ) //tek ayet varsa
-	{
-		$html = file_get_html("http://kuran.diyanet.gov.tr/KuranHandler.ashx?l=ar&a=" . $sure_index . ":" . $sure_no);
-				
-		if (method_exists($html,"find")) {
-			 // then check if the html element exists to avoid trying to parse non-html
-			 if ($html->find('span[id=ar_' . $sure_index . '-' . $sure_no . ']')) {
-				  // and only then start searching (and manipulating) the dom
-				$text = $html->find('span[id=ar_' . $sure_index . '-' . $sure_no . ']', 0)->plaintext;
-				$text = trim($text, " \t\r\n");
-				return $text;
-			 }
-			 else return "Arapça metin bulunamadı3";
-		}
-		else return "Arapça metin bulunamadı4";
-	}
-	else
-	{
-		return "Arapça metin bulunamadı(regex)";
-	}
-}
-
-?>
