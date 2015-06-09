@@ -197,6 +197,16 @@ textarea, input[type=text], input[type=password], select
 	font-weight:bold;
 }
 
+#ayet #arapca
+{
+	line-height: 2em;
+	text-align: justify;
+	color: black;
+	direction: rtl;
+	font-size: 1.7em;
+	letter-spacing: 1px;
+}
+
 .button
 {
 	/*text-align:center;*/

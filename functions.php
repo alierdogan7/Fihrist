@@ -76,6 +76,18 @@ function rapor($basari, $rapor, $header_url = "index.php?action=anaSayfa")
 	exit;
 }
 
+function sureIndexBul($sure_adi)
+{
+	$sureler = tum_sureleri_ver();
+	foreach($sureler as $index => $sure)
+	{
+		if($sure == $sure_adi)
+			return $index;
+	}
+	return -1;
+}
+
+
 function tum_sureleri_ver()
 {
 	$sureler = array("Fâtiha", "Bakara", "Âl-i İmrân", "Nisâ", "Mâide", "Enâm", "Arâf", "Enfâl", "Tevbe", "Yunus", "Hûd", "Yusuf", "Rad", "İbrahim", 
