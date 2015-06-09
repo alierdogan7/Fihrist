@@ -77,6 +77,7 @@ else
 <li>Ayet Sayısı: <?php echo Ayet::getTotalAyetNumber(); ?></a></li>
 <li>Tag Sayısı: <?php echo Tag::getTotalTagNumber(); ?></li>
 <li><a href="http://www.kuranmeali.com" class="link">Kuranmeali.com</a></li>
+<li><a href="http://kuran.diyanet.gov.tr" class="link">Diyanet Kuran Portalı</a></li>
 </ul>
 </div>
 

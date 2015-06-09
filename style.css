@@ -159,7 +159,7 @@ textarea, input[type=text], input[type=password], select
 #ayet
 {
 	padding: 3%;
-	border: 2px double #1d4283;
+	/*border: 2px double #1d4283;*/
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
