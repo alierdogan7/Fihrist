@@ -203,8 +203,9 @@ textarea, input[type=text], input[type=password], select
 	text-align: justify;
 	color: black;
 	direction: rtl;
-	font-size: 1.7em;
+	font-size: 2em;
 	letter-spacing: 1px;
+	font-family: 'Lateef', cursive;
 }
 
 .button

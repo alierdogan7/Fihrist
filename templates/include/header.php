@@ -8,6 +8,7 @@
 
 <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lateef&subset=arabic,latin' rel='stylesheet' type='text/css'>
 
 </head>
 

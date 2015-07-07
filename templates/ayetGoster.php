@@ -1,6 +1,7 @@
 <?php include "templates/include/header.php"; 
 require("classes/simple_html_dom.php");?>
 
+
     <div id="content">
 		  
 		<div id="ayet">
