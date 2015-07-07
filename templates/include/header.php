@@ -10,6 +10,9 @@
 <script type="text/javascript" src="scripts.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Lateef&subset=arabic,latin' rel='stylesheet' type='text/css'>
 
+<!--<meta property="og:title" content="Ayetlerim" /><meta property="og:description" content="Kur'an Ayetleri Fihristi" />-->
+<meta property="og:image" content="http://burak-erdogan.com/ayetlerim/images/logo_m.png" />
+
 </head>
 
 <body>
