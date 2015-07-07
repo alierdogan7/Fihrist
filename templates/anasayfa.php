@@ -25,8 +25,12 @@
 		<div id="clearer"></div>
 		</p>
 		
-		<p><strong>Meal:</strong></p>
-		<p><?php echo metin_goster($gunun_ayeti->ayet_meal); ?></p>
+		<p><strong>Meal:</strong><?php echo metin_goster($gunun_ayeti->ayet_meal); ?></p>
+
+		<?php if( $ayet->ek_not != "" ) { ?>
+		<p><strong><u><a href='ayetler.php?action=ayetGoster&ayetId=<?php echo $gunun_ayeti->ayet_id; ?>' class='link'>Ek Not...</a></u></strong></p>
+		<?php } ?>
+
 		</div>
 
 		
@@ -72,7 +76,12 @@
 					</p>
 					<div id="clearer"> </div>
 					
-					<p><strong>Meal: </strong><?php echo metin_goster($ayet->ayet_meal) ?></p>	
+					<p><strong>Meal: </strong><?php echo metin_goster($ayet->ayet_meal) ?></p>
+					
+					<?php if( $ayet->ek_not != "" ) { ?>
+					<p><strong><u><a href='ayetler.php?action=ayetGoster&ayetId=<?php echo $ayet->ayet_id; ?>' class='link'>Ek Not...</a></u></strong></p>
+					<?php } ?>
+
 			</div>
 		<?php
 		}

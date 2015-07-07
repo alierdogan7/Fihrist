@@ -417,7 +417,7 @@ textarea, input[type=text], input[type=password], select
 	padding:7px 10px;
 }
 
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px)
+@media only screen and (max-width: 1000px), only screen and (max-device-width: 1000px)
 {
 	html * {max-height:1000000px;}
 	
@@ -437,6 +437,16 @@ textarea, input[type=text], input[type=password], select
 	{
 		padding: 10px;
 		float: left;
+	}
+
+	/* Enlarging the space for the ayah text for a better readibility. */
+	#ayet
+	{
+		border-radius: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		box-shadow: 0 0;
 	}
 
 	#left-bar

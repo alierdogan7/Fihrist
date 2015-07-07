@@ -81,6 +81,10 @@
 		
 		<p><strong>Meal: </strong><?php echo metin_goster($ayet->ayet_meal) ?></p>
 
+		<?php if( $ayet->ek_not != "" ) { ?>
+		<p><strong><u><a href='ayetler.php?action=ayetGoster&ayetId=<?php echo $ayet->ayet_id; ?>' class='link'>Ek Not...</a></u></strong></p>
+		<?php } ?>
+		
 		<?php if($giris_yapmis) { ?>
 		<p style="float:right; font-size:.7em;"><a href="<?php echo "ayetler.php?action=ayetDuzenle&ayetId=" . $ayet->ayet_id ?>" class="button" id="yesil">Ayet Düzenle</a>
 		<a href="<?php echo "ayetler.php?action=ayetSil&ayetId=" . $ayet->ayet_id ?>" class="button" id="kirmizi">Ayet Sil</a></p>

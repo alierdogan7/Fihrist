@@ -30,8 +30,8 @@ function getAutoAyetMeal($sure_index, $sure_no, $meal_secimi = 'elmali')
 		$ayet_no2 = $results[2][0];
 		$meal = "";
 		
-		//eğer 5-3 gibi birşey girilmemişse
-		if($ayet_no1 <= $ayet_no2)
+		//eğer 5-3 gibi birşey girilmemişse ve ayet indexleri doğru aralıktaysa
+		if( ($ayet_no1 <= $ayet_no2) && ($ayet_no1 >= 1 && $ayet_no2 <= tum_ayet_sayilari_ver()[$sure_index + 1]) )
 		{
 			for($i=$ayet_no1; $i <= $ayet_no2; $i++)
 			{
@@ -45,14 +45,13 @@ function getAutoAyetMeal($sure_index, $sure_no, $meal_secimi = 'elmali')
 						$str = trim($str, " \t\r\n");
 						$meal .= $str . "\r\n\r\n"; //tr15'in ikinci sütunu(meal kısmı)nın düz text hali
 					 }
-					 else return "Belirli aralıkta bir veya birkaç ayet bulunamadı. Ayet aralığını kontrol ediniz"; //eğer sayfa bulunamazsa tüm meali komple yoket
 				}
 				else return "Ayet bulunamadı1"; //eğer sayfa bulunamazsa tüm meali komple yoket
 			}
 			
 			return substr($meal, 0, -4);; //loop'tan başarıyla çıkarsa meali return et
 		}
-		else return "İlk ayet numarası ikincisinden büyük olamaz.";
+		else return "Ayet aralığını kontrol ediniz.";
 	}
 	elseif(preg_match($regex2, $sure_no) ) //tek ayet varsa
 	{
