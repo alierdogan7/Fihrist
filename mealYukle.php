@@ -1,5 +1,6 @@
 <?php
 require("classes/simple_html_dom.php");
+require_once("functions.php");
 
 function getAutoAyetMeal($sure_index, $sure_no, $meal_secimi = 'elmali')
 {
@@ -30,8 +31,12 @@ function getAutoAyetMeal($sure_index, $sure_no, $meal_secimi = 'elmali')
 		$ayet_no2 = $results[2][0];
 		$meal = "";
 		
+		//before php 5.4 array accesses like getArray()[3] is invalid, so this temporary variable is to be used
+		$tmp = tum_ayet_sayilari_ver();
+		$sure_son_ayet = $tmp[$sure_index + 1];
+		
 		//eğer 5-3 gibi birşey girilmemişse ve ayet indexleri doğru aralıktaysa
-		if( ($ayet_no1 <= $ayet_no2) && ($ayet_no1 >= 1 && $ayet_no2 <= tum_ayet_sayilari_ver()[$sure_index + 1]) )
+		if( ($ayet_no1 <= $ayet_no2) && ($ayet_no1 >= 1 && $ayet_no2 <= $sure_son_ayet ) )
 		{
 			for($i=$ayet_no1; $i <= $ayet_no2; $i++)
 			{
