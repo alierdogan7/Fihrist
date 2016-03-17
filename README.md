@@ -3,6 +3,9 @@ A web application holds the Qur'anic verses in the database, and enables the use
 
 Live-demo: http://burakerdogan.org/fihrist/
 
-# TODO
+### TODO
 
-Provide the Qur'an text from this resource as of now: http://tanzil.net/download/
+Possible to provide the Qur'an text from these resources as of now: 
+http://tanzil.net/download/
+http://qzaidi.github.io/quran/javascript/
+http://docs.globalquran.com/Main_Page
